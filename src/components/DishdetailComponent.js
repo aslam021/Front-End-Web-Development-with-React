@@ -45,7 +45,7 @@ class CommentForm extends Component{
                     <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
                     
                     <ModalBody>
-                    <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+                        <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
                             <div className="form-group">
                                 <Label htmlFor="rating">Rating</Label>
                                 <Control.select model=".rating" name="rating"
@@ -73,7 +73,7 @@ class CommentForm extends Component{
                                     model=".yourname"
                                     show="touched"
                                     messages={{
-                                        required: 'Required',
+                                        required: 'Required! ',
                                         minLength: 'Must be greater than 3 characters',
                                         maxLength: 'Must be 15 characters or less'
                                     }}

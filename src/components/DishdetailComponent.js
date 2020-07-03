@@ -27,9 +27,7 @@ class CommentForm extends Component{
     }
 
     handleSubmit(values) {
-        this.setState({
-            isModalOpen: false
-        })
+        this.toggleModal();
 
         console.log('Current State is: ' + JSON.stringify(values));
         alert('Current State is: ' + JSON.stringify(values));
@@ -55,7 +53,6 @@ class CommentForm extends Component{
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
-                                    <option>6</option>
                                 </Control.select>
                             </div>
 

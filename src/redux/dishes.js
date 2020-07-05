@@ -1,5 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 
+// this will respond to the dispatched Redux actions
 export const Dishes = (state = { isLoading: true,
     errMess: null,
     dishes:[]}, action) => {
